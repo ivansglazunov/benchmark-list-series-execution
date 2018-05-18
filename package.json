@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "node launch.js"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "beautify-benchmark": "^0.2.4",
+    "benchmark": "^2.1.4",
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.10",
+    "promise": "^8.0.1",
+    "q": "^1.5.1",
+    "rsvp": "^4.8.2"
+  }
+}
