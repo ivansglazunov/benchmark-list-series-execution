@@ -21,14 +21,15 @@ const benchmarks = {
           last = next;
         });
         let pointer = start;
+        const iteratee = (next) => {
+          if (pointer) pointer.listener(() => {
+            pointer = pointer.next;
+            next();
+          });
+          else next(true);
+        };
         async.forever(
-          (next) => {
-            pointer.listener(() => {
-              pointer = pointer.next;
-              if (pointer) next();
-              else next(true);
-            });
-          },
+          iteratee,
           () => defer.resolve(),
         );
       },
