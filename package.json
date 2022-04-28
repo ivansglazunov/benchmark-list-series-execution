@@ -5,7 +5,7 @@
     "start": "node launch.js"
   },
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^2.6.4",
     "beautify-benchmark": "^0.2.4",
     "benchmark": "^2.1.4",
     "bluebird": "^3.5.1",
